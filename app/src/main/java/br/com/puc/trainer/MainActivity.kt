@@ -20,34 +20,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             TrainerTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyfirstComposable(
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Text("Teste")
 
                 }
             }
         }
     }
-}
-
-@Composable
-fun MyfirstComposable(modifier: Modifier = Modifier){
-    Text(
-        text = "Hello Mad Composable World",
-        modifier = modifier
-    );
-
-}
-
-@Preview(
-    name= "TextPreview",
-    showBackground = true,
-    showSystemUi = true,
-)
-@Composable
-fun MyfirstComposablePreview(){
-    TrainerTheme {
-        MyfirstComposable()
-    }
-
 }
